@@ -1,0 +1,19 @@
+{
+  "name": "travist",
+  "version": "1.0.0",
+  "description": "Simple and Beautiful CSS Framework",
+  "main": "travist.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyoya0819/travist.git"
+  },
+  "author": "kyoya0819",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyoya0819/travist/issues"
+  },
+  "homepage": "https://github.com/kyoya0819/travist#readme"
+}
