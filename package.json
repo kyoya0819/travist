@@ -4,7 +4,7 @@
   "description": "Simple and Beautiful CSS Framework",
   "main": "travist.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kyoya0819/travist/issues"
   },
-  "homepage": "https://github.com/kyoya0819/travist#readme"
+  "homepage": "https://github.com/kyoya0819/travist#readme",
+  "dependencies": {
+    "sass": "^1.32.7"
+  }
 }
