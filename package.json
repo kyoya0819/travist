@@ -1,22 +1,23 @@
 {
-  "name": "travist",
-  "version": "1.0.0",
-  "description": "Simple and Beautiful CSS Framework",
-  "main": "travist.scss",
-  "scripts": {
-    
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kyoya0819/travist.git"
-  },
-  "author": "kyoya0819",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kyoya0819/travist/issues"
-  },
-  "homepage": "https://github.com/kyoya0819/travist#readme",
-  "dependencies": {
-    "sass": "^1.32.7"
-  }
+    "name": "travist",
+    "version": "1.0.0",
+    "description": "Simple and Beautiful CSS Framework",
+    "main": "travist.scss",
+    "scripts": {
+        "build": "sass travist.scss travist.css --no-source-map && minify travist.css > travist.min.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kyoya0819/travist.git"
+    },
+    "author": "kyoya0819",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kyoya0819/travist/issues"
+    },
+    "homepage": "https://github.com/kyoya0819/travist#readme",
+    "dependencies": {
+        "minify": "^7.0.1",
+        "sass": "^1.32.8"
+    }
 }
