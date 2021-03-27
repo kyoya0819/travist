@@ -1,0 +1,29 @@
+@import './../variables';
+
+.select {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: solid $outline-width $outline-color;
+    border-radius: $radius;
+
+    &-wrapper {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            content: url("data:image/svg+xml;utf-8,<svg xmlns=\"http://www.w3.org/2000/svg\" border=\"%23000\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-chevron-down\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>");
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            right: .5rem;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .select {
+            padding-right: 2.5rem;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 @import './../variables';
 
 .input-text {
+    display: inline-block;
     padding: .5rem .7rem;
     border: solid $outline-width $outline-color;
     border-radius: $radius;
