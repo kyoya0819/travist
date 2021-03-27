@@ -1,0 +1,16 @@
+@import './../variables';
+
+.input-text {
+    padding: .5rem .7rem;
+    border: solid $outline-width $outline-color;
+    border-radius: $radius;
+
+    &:focus {
+        box-shadow: 0 0 0 $selected-outline-width rgba($selected-outline-color, $selected-outline-opacity);
+        border-color: $selected-outline-color;
+    }
+
+    &.is-rounded {
+        border-radius: 9999px;
+    }
+}
