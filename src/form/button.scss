@@ -1,0 +1,39 @@
+@import './../variables';
+
+$colors: (
+        is-rose:   ($rose-500,   $rose-600,   $white),
+        is-pink:   ($pink-500,   $pink-600,   $white),
+        is-purple: ($purple-500, $purple-600, $white),
+        is-blue:   ($blue-500,   $blue-600,   $white),
+        is-cyan:   ($cyan-500,   $cyan-600,   $white),
+        is-green:  ($green-500,  $green-600,  $white),
+        is-yellow: ($yellow-500, $yellow-600, $white),
+        is-orange: ($orange-500, $orange-600, $white),
+        is-red:    ($red-500,    $red-600,    $white),
+        is-black:  ($gray-800,   $gray-700,   $white),
+        is-white:  ($white,      $gray-100,   $font-color)
+);
+
+.button {
+    display: inline-block;
+    padding: .5em 1em;
+    border-radius: .5em;
+
+    @each $key, $color in $colors {
+        &.#{$key} {
+            background: nth($color, 1);
+            color: nth($color, 3);
+            box-shadow: $shadow;
+            transition: background .3s, box-shadow .3s;
+
+            &:hover {
+                background: nth($color, 2);
+                box-shadow: none;
+            }
+        }
+    }
+
+    &.is-rounded {
+        border-radius: 9999px;
+    }
+}
