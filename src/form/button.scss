@@ -17,7 +17,7 @@ $colors: (
 .button {
     display: inline-block;
     padding: .5em 1em;
-    border-radius: .5em;
+    border-radius: $radius;
 
     @each $key, $color in $colors {
         &.#{$key} {
